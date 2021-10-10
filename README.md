@@ -1,7 +1,7 @@
 
 Android App Project for my Software Engineering and Project Work IN2000 class at the University of Oslo.
 
-The app enables airplane enthusiasts and curious users to primarily see live data about planes in the sky and weather at airports. 
+Airplane Enthusiast enables users to primarily see live data about planes in the sky and weather at airports in a dashboard, and visual interactive map. 
 Design for the app was done by surveying potential users and rapid prototyping. 
 * The dashboard tab is an overview of the airports in Norway, displaying weather statistics and information for each of them (see picture below)
 * The maps tab interactive map page which shows the location of each flight over Norway in real time, with insightful information displayed upon tapping a plane, or airport on the map (see picture below).
