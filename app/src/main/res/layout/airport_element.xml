@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="8dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/linear_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/airport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ap_image"
+                android:layout_width="160dp"
+                android:layout_height="138dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/image_of_airport"/>
+
+            <TextView
+                android:id="@+id/temperature_info"
+                android:layout_width="73dp"
+                android:layout_height="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="91dp" />
+
+            <TextView
+                android:id="@+id/wind_info"
+                android:layout_width="73dp"
+                android:layout_height="29dp"
+                android:layout_below="@+id/temperature_info"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="91dp" />
+
+            <TextView
+                android:id="@+id/precipitationRate_info"
+                android:layout_below="@+id/wind_info"
+                android:layout_alignParentEnd="true"
+                android:layout_width="73dp"
+                android:layout_height="29dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_alignEnd="@+id/ap_image"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="91dp" />
+
+            <ImageView
+                android:id="@+id/wind_icon"
+                android:contentDescription="@string/wind_icon"
+                android:layout_width="42dp"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignEnd="@+id/wind_info"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/wind_icon" />
+
+            <ImageView
+                android:id="@+id/wind_dir"
+                android:contentDescription="@string/wind_direction_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/wind_info"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="57dp"
+                android:src="@drawable/wind_dir2" />
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:contentDescription="@string/weather_icon"
+                android:layout_width="41dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="35dp" />
+
+            <ImageView
+                android:id="@+id/precipitationRate_icon"
+                android:contentDescription="@string/precipitation_rate_icon"
+                android:layout_width="41dp"
+                android:layout_height="38dp"
+                android:layout_alignEnd="@+id/precipitationRate_info"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="35dp"
+                android:src="@drawable/ic_baseline_umbrella_24"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/expand_icon_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|end"
+            android:contentDescription="@string/expand_description"
+            android:src="@drawable/expand_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/expandable_info">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/icao_view_set_text"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/icao"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/icao_view"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/metar_text_set_text"
+                    android:layout_width="124dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/latest_metar"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/metar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/yearly_travelers_set_text"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yearly_visitors"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/yearly_travelers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/distance_view_set_text"
+                    android:visibility="gone"
+                    android:text="@string/distance_from_you"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/distance_view"
+                    android:visibility="gone"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

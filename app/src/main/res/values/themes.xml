@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FlyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorNavText</item>
+        <item name="colorPrimaryVariant">@color/colorNavText</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorNavText</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="color">@color/cardview_light_background</item>
+    </style>
+    <style name="main_style">
+        <item name="android:background">@drawable/spinner_style_corner</item>
+        <item name="android:windowBackground">@drawable/spinner_style_corner</item>
+    </style>
+    <color name="color_theme">@color/cardview_light_background</color>
+</resources>

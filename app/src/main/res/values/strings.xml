@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AeroNor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="weather_info">Temp: %1$s°, Icon: %2$s, Wind: %3$s</string>
+
+    <string name="title_dashboard">Airports</string>
+    <string name="title_map">Map</string>
+    <string name="refresh">refresh</string>
+    <string name="not_connected_message">Please connect to the internet to continue</string>
+
+    <string-array name="sorting_options">
+        <item>Most visited</item>
+        <item>Hottest</item>
+        <item>Coldest</item>
+    </string-array>
+
+    <string name="distance_in_km">%1s km</string>
+    <string name="degrees_celsius">%1s°C</string>
+    <string name="meters_per_second">%1s m/s</string>
+    <string name="precipitation_amount">%1s mm</string>
+    <string name="not_connected_to_internet">Not connected to internet</string>
+    <string name="startup_logo_showing">Startup logo showing</string>
+    <string name="image_of_airport">Image of airport</string>
+    <string name="wind_icon">Wind icon</string>
+    <string name="wind_direction_icon">Wind direction icon</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="precipitation_rate_icon">Precipitation-rate icon</string>
+    <string name="yearly_visitors">Yearly visitors:</string>
+    <string name="distance_from_you">Distance from you:</string>
+    <string name="latest_metar">Latest METAR:</string>
+    <string name="icao">Icao:</string>
+    <string name="navigate_to_airports_icon">Navigate to Airports icon</string>
+    <string name="navigate_to_airplanes_in_map">Navigate to airplanes in map</string>
+    <string name="expand_description">Expand icon - expand view by pressing anywhere on the cardview</string>
+</resources>

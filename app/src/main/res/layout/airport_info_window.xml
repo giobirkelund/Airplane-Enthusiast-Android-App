@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_cv"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/airport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ap_image"
+                android:layout_width="159dp"
+                android:layout_height="118dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/image_of_airport"
+                android:foregroundGravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_info"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/ap_image" />
+
+            <TextView
+                android:id="@+id/wind_info"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/temperature_info"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="65dp"
+                android:layout_toEndOf="@+id/ap_image" />
+
+            <TextView
+                android:id="@+id/precipitationRate"
+                android:layout_width="40dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/temperature_info"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/ap_image" />
+
+            <ImageView
+                android:id="@+id/wind_icon"
+                android:layout_width="42dp"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="18dp"
+                android:contentDescription="@string/wind_icon"
+                android:src="@drawable/wind_icon" />
+
+            <ImageView
+                android:id="@+id/wind_dir"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/wind_direction_icon"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="18dp"
+                android:src="@drawable/wind_dir2" />
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="41dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="7dp"
+                android:contentDescription="@string/weather_icon" />
+
+            <ImageView
+                android:id="@+id/precipitationRate_icon"
+                android:layout_width="41dp"
+                android:layout_height="36dp"
+                android:layout_alignEnd="@+id/precipitationRate"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="79dp"
+                android:layout_marginEnd="7dp"
+                android:contentDescription="@string/precipitation_rate_icon"
+                android:src="@drawable/ic_baseline_umbrella_24"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
